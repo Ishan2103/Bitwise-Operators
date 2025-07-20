@@ -5,7 +5,6 @@ Software Used
 VS Code
 
 Theory
-Expriment 4(a)
 Bitwise operators are used to perform operations on the binary representations of integers. They operate at the bit level and are fundamental for tasks that require efficient data manipulation, such as low-level programming, cryptography, and performance optimization. Bitwise operations are faster than arithmetic operations and can be used to implement various algorithms and data structures.
 
 Types of Bitwise Operators
@@ -23,7 +22,7 @@ Left Shift (<<) : Shifts the bits of an integer to the left by a specified numbe
 
 Right Shift (>>) : Shifts the bits of an integer to the right by a specified number of positions. The behavior for the leftmost bits depends on the sign of the integer (logical shift for unsigned integers, arithmetic shift for signed integers). This operation effectively divides the integer by 2 for each shift position. Example: 5 >> 1 (binary: 0101 >> 1) results in 2 (binary: 0010).
 
-Expriment 4(b)
+
 Binary Setting-
 Setting a bit means altering the bit at a specific position to 1 while keeping other bits unchanged. This operation is useful in scenarios where specific flags or bits need to be activated.
 
