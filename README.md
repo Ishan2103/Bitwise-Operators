@@ -22,6 +22,9 @@ Left Shift (<<) : Shifts the bits of an integer to the left by a specified numbe
 
 Right Shift (>>) : Shifts the bits of an integer to the right by a specified number of positions. The behavior for the leftmost bits depends on the sign of the integer (logical shift for unsigned integers, arithmetic shift for signed integers). This operation effectively divides the integer by 2 for each shift position. Example: 5 >> 1 (binary: 0101 >> 1) results in 2 (binary: 0010).
 
+Conclusion - learnt to use bitwise operators and their functions
+
+
 
 Binary Setting-
 Setting a bit means altering the bit at a specific position to 1 while keeping other bits unchanged. This operation is useful in scenarios where specific flags or bits need to be activated.
