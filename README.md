@@ -1,33 +1,46 @@
-AIM -
-To perform bitwise operations and set reset
+# 🧠 Bitwise Operators in C++
 
-Software Used
-VS Code
+---
 
-Theory
-Bitwise operators are used to perform operations on the binary representations of integers. They operate at the bit level and are fundamental for tasks that require efficient data manipulation, such as low-level programming, cryptography, and performance optimization. Bitwise operations are faster than arithmetic operations and can be used to implement various algorithms and data structures.
+## 🔹 What Are Bitwise Operators?
 
-Types of Bitwise Operators
-Bitwise operators include:
+Bitwise operators are used to perform operations directly on **binary representations** of integers. These operators are especially useful in **system programming, low-level data manipulation, embedded systems, cryptography**, and **game development**.
 
-Bitwise AND (&) : Performs a bitwise AND operation between two integers. The result is an integer where each bit is set to 1 if the corresponding bits of both operands are 1; otherwise, it is 0. Example: 5 & 3 (binary: 0101 & 0011) results in 1 (binary: 0001).
+Every integer in memory is stored in binary (a sequence of 0s and 1s). Bitwise operators allow you to manipulate these bits directly for maximum performance and control.
 
-Bitwise OR (|) : Performs a bitwise OR operation between two integers. The result is an integer where each bit is set to 1 if at least one of the corresponding bits of the operands is 1. Example: 5 | 3 (binary: 0101 | 0011) results in 7 (binary: 0111).
+---
 
-Bitwise XOR (^) : Performs a bitwise XOR (exclusive OR) operation between two integers. The result is an integer where each bit is set to 1 if the corresponding bits of the operands are different; otherwise, it is 0. Example: 5 ^ 3 (binary: 0101 ^ 0011) results in 6 (binary: 0110).
+## 🔸 Why Use Bitwise Operators?
 
-Bitwise NOT (~) : Performs a bitwise NOT (complement) operation on an integer. The result is an integer where each bit is inverted (i.e., 0 becomes 1, and 1 becomes 0). Example: ~5 (binary: ~0101) results in -6 (binary: ...1010 in two's complement representation).
+✅ Faster execution (bitwise operations are low-level and close to hardware)  
+✅ Useful in memory-efficient algorithms  
+✅ Helpful for setting flags, toggling bits, packing/unpacking data  
+✅ Core concept in operating systems, hardware drivers, and embedded systems  
 
-Left Shift (<<) : Shifts the bits of an integer to the left by a specified number of positions. Zeros are shifted into the rightmost bits. This operation effectively multiplies the integer by 2 for each shift position. Example: 5 << 1 (binary: 0101 << 1) results in 10 (binary: 1010).
+---
 
-Right Shift (>>) : Shifts the bits of an integer to the right by a specified number of positions. The behavior for the leftmost bits depends on the sign of the integer (logical shift for unsigned integers, arithmetic shift for signed integers). This operation effectively divides the integer by 2 for each shift position. Example: 5 >> 1 (binary: 0101 >> 1) results in 2 (binary: 0010).
+## 🔹 List of Bitwise Operators in C++
 
-Conclusion - learnt to use bitwise operators and their functions
+| Operator | Symbol | Description                                |
+|----------|--------|--------------------------------------------|
+| AND      | `&`    | Bitwise AND                                 |
+| OR       | `\|`   | Bitwise OR                                  |
+| XOR      | `^`    | Bitwise Exclusive OR                        |
+| NOT      | `~`    | Bitwise NOT (One's Complement)              |
+| Left Shift  | `<<` | Shifts bits to the left (fills 0 from right) |
+| Right Shift | `>>` | Shifts bits to the right (drops rightmost bits) |
 
+---
 
+## 🧾 Detailed Explanation of Each Operator
 
-Binary Setting-
-Setting a bit means altering the bit at a specific position to 1 while keeping other bits unchanged. This operation is useful in scenarios where specific flags or bits need to be activated.
+### 🔸 1. Bitwise AND (`&`)
 
-Binary Setting-
-Resetting a bit involves changing the bit at a specific position to 0 while keeping other bits unchanged. This operation is commonly used to deactivate specific flags or bits.
+Performs **logical AND** operation on each corresponding bit of two numbers. The result is 1 only if **both bits are 1**.
+
+#### Example:
+```cpp
+int a = 5;  // 0101
+int b = 3;  // 0011
+int c = a & b; // 0001 → 1
+
